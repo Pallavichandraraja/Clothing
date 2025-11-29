@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Your Cart</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html" class="active">Cart</a>
+  </nav>
+</header>
+
+<section class="container">
+
+  <div id="emptyCart">Your cart is empty.</div>
+
+  <table id="cartTable" class="hidden">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="cartBody"></tbody>
+  </table>
+
+  <div id="cartTotalBox" class="hidden">
+    <h3>Total: ₹<span id="cartTotal"></span></h3>
+    <a class="btn" href="checkout.html">Checkout</a>
+  </div>
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
